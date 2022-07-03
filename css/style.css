@@ -50,6 +50,23 @@ ul {
     width: 1170px;
   }
 }
+/* scroll-to-top */
+.scroll-to-top {
+  position: fixed;
+  right: -100px;
+  bottom: 0;
+  font-size: 40px;
+  margin: 40px;
+  cursor: pointer;
+  z-index: 100;
+  color: var(--main-color);
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+/* scroll-to-top */
 /* start nav */
 nav {
   background-color: white;
@@ -607,3 +624,9 @@ nav .container .mega-menu .links li a {
   color: #03a9f4;
 }
 /* end features */
+/* start testimonials */
+.testimonials {
+  padding: var(--main-padding-bottom) 0px;
+  background-color: var(--section-background);
+}
+/* start testimonials */
