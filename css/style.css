@@ -483,3 +483,127 @@ nav .container .mega-menu .links li a {
   }
 }
 /* end gallery */
+
+/* start features */
+.features {
+  padding: var(--main-padding-bottom) 0px;
+}
+.features .container .feature-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+.features .container .feature-content .box {
+  border: 1px solid #ececec;
+}
+.features .container .feature-content .box .image {
+  position: relative;
+  overflow: hidden;
+}
+.features .container .feature-content .box .image::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+  position: absolute;
+  color: #fafafa;
+  left: 0;
+  bottom: -20px;
+  height: 0px;
+  width: 100%;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.features .container .feature-content .image:hover::after {
+  bottom: 0px;
+  height: 100%;
+}
+
+.features .container .feature-content .quality .image::after {
+  content: "Quality";
+  background-color: rgb(244 64 54 / 50%);
+}
+.features .container .feature-content .time .image::after {
+  content: "Time";
+  background-color: rgb(0 150 136 / 50%);
+}
+.features .container .feature-content .passion .image::after {
+  content: "Passion";
+  background-color: rgb(3 169 244 / 50%);
+}
+.features .container .feature-content .box .image img {
+  width: 100%;
+}
+.features .container .feature-content .box h2 {
+  margin: 45px auto;
+  text-align: center;
+  font-size: 35px;
+  width: fit-content;
+  position: relative;
+}
+
+.features .container .feature-content .box h2::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  bottom: -15px;
+  width: calc(100% - 40px);
+  height: 4px;
+}
+.features .container .feature-content .quality h2{
+  color: #f44036;
+}
+.features .container .feature-content .quality h2::before{
+  background: #f44036;
+}
+.features .container .feature-content .time h2 {
+  color: #009688;
+}
+.features .container .feature-content .time h2::before {
+  background: #009688;
+}
+.features .container .feature-content .passion h2 {
+  color: #03a9f4;
+}
+.features .container .feature-content .passion h2::before {
+  background: #03a9f4;
+}
+
+.features .container .feature-content .box p {
+  padding-left: 20px;
+  line-height: 2;
+  font-size: 24px;
+  color: rgb(108, 108, 108);
+}
+.features .container .feature-content .box a {
+  display: block;
+  border: 3px solid transparent;
+  width: fit-content;
+  margin: 0 auto 30px;
+  font-weight: bold;
+  font-size: 22px;
+  padding: 10px 30px;
+  border-radius: 6px;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.features .container .feature-content .quality a{
+  border-color: #f44036;
+  color: #f44036;
+}
+.features .container .feature-content .time a{
+  border-color: #009688;
+  color: #009688;
+}
+.features .container .feature-content .passion a{
+  border-color: #03a9f4;
+  color: #03a9f4;
+}
+/* end features */
