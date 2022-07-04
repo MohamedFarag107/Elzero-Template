@@ -665,3 +665,53 @@ nav .container .mega-menu .links li a {
   color: #ffc107;
 }
 /* start testimonials */
+/* start team */
+.team {
+  background-color: white;
+  padding: var(--main-padding-bottom) 0px;
+}
+.team .container .team-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+.team .container .team-cards .card {
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  gap: 10px;
+  background-color: var(--section-background);
+  overflow: hidden;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.team .container .team-cards .card img{
+  width: 100%;
+  grid-column: span 3;
+}
+.team .container .team-cards .card .text{
+  grid-column: span 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.team .container .team-cards .card .icons {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 25px;
+}
+.team .container .team-cards .card .icons svg:nth-child(1){
+  color: #1877f2;
+}
+.team .container .team-cards .card .icons svg:nth-child(2){
+  color: #1da1f2;
+}
+.team .container .team-cards .card .icons svg:nth-child(3){
+  color: #0077b5;
+}
+.team .container .team-cards .card .icons svg:nth-child(4){
+  color: #ff0000;
+}
+/* end team */
