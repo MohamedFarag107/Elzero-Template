@@ -629,4 +629,39 @@ nav .container .mega-menu .links li a {
   padding: var(--main-padding-bottom) 0px;
   background-color: var(--section-background);
 }
+.testimonials .container .testimonials-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  gap: 40px;
+}
+.testimonials .container .testimonials-content .box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 7%);
+  position: relative;
+}
+.testimonials .container .testimonials-content .box img {
+  position: absolute;
+  top: -25%;
+  right: -10px;
+  width: 100px;
+  height: 100px;
+  border: 10px solid var(--section-background);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.testimonials .container .testimonials-content .box h4 {
+  color: rgb(0 0 0 / 50%);
+}
+.testimonials .container .testimonials-content .box .rate {
+  color: #ffc107;
+}
 /* start testimonials */
