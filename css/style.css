@@ -383,7 +383,7 @@ nav .container .mega-menu .links li a {
 .main-title:hover::before {
   left: 0;
   height: 100%;
-  width: 50%;
+  width: 53%;
   border-radius: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -393,7 +393,7 @@ nav .container .mega-menu .links li a {
 .main-title:hover::after {
   right: 0;
   height: 100%;
-  width: 50%;
+  width: 53%;
   border-radius: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -882,28 +882,140 @@ nav .container .mega-menu .links li a {
   border: 1px solid var(--section-background);
   border-radius: 5px;
 }
-.skills .container .skills-content .progress .skill:nth-child(1) span::before{
+.skills .container .skills-content .progress .skill:nth-child(1) span::before {
   width: 95%;
 }
-.skills .container .skills-content .progress .skill:nth-child(1) span::after{
+.skills .container .skills-content .progress .skill:nth-child(1) span::after {
   content: "95 %";
 }
-.skills .container .skills-content .progress .skill:nth-child(2) span::before{
+.skills .container .skills-content .progress .skill:nth-child(2) span::before {
   width: 90%;
 }
-.skills .container .skills-content .progress .skill:nth-child(2) span::after{
+.skills .container .skills-content .progress .skill:nth-child(2) span::after {
   content: "90 %";
 }
-.skills .container .skills-content .progress .skill:nth-child(3) span::before{
+.skills .container .skills-content .progress .skill:nth-child(3) span::before {
   width: 90%;
 }
-.skills .container .skills-content .progress .skill:nth-child(3) span::after{
+.skills .container .skills-content .progress .skill:nth-child(3) span::after {
   content: "90 %";
 }
-.skills .container .skills-content .progress .skill:nth-child(4) span::before{
+.skills .container .skills-content .progress .skill:nth-child(4) span::before {
   width: 80%;
 }
-.skills .container .skills-content .progress .skill:nth-child(4) span::after{
+.skills .container .skills-content .progress .skill:nth-child(4) span::after {
   content: "80 %";
 }
 /* end skills */
+/* start events */
+.events {
+  background-color: var(--section-background);
+  padding: var(--main-padding-top) 0px;
+  position: relative;
+}
+.events .container .events-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  align-items: center;
+}
+.events::before,
+.events::after {
+  content: url("../asset/images/dots.png");
+  position: absolute;
+}
+.events::after {
+  top: var(--main-padding-top);
+  right: 0;
+}
+.events::before {
+  bottom: var(--main-padding-bottom);
+  left: 0;
+}
+@media (max-width: 991px) {
+  .events .container .events-content img,
+  .events::before,
+  .events::after {
+    display: none;
+  }
+}
+.events .container .events-content img {
+  width: 100%;
+}
+.events .container .events-content .event {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.events .container .events-content .event .time {
+  display: flex;
+  gap: 10px;
+  text-align: center;
+}
+.events .container .events-content .event .unit {
+  border: 2px solid #00000024;
+  width: 90px;
+  border-radius: 5px;
+  background-color: white;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.events .container .events-content .event .time .day {
+  color: #037ef3;
+}
+.events .container .events-content .event .time .hour {
+  color: #f85a40;
+}
+.events .container .events-content .event .time .minute {
+  color: #00c16e;
+}
+.events .container .events-content .event .time .second {
+  color: #7552cc;
+}
+/* ---------- */
+.events .container .events-content .event .time .day:hover,
+.events .container .events-content .event .time .day:hover .name {
+  border-color: #037ef3;
+}
+.events .container .events-content .event .time .hour:hover .name ,
+.events .container .events-content .event .time .hour:hover {
+  border-color: #f85a40;
+}
+.events .container .events-content .event .time .minute:hover .name ,
+.events .container .events-content .event .time .minute:hover {
+  border-color: #00c16e;
+}
+.events .container .events-content .event .time .second:hover .name ,
+.events .container .events-content .event .time .second:hover {
+  border-color: #7552cc;
+}
+/* ----------------- */
+.events .container .events-content .event .time .number {
+  margin: 30px 10px;
+}
+.events .container .events-content .event .time .name {
+  border-top: 2px solid #00000024;
+  padding: 10px;
+  font-weight: bold;
+  transition: var(--main-transition);
+  margin-bottom: 0;
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.events .container .events-content .event .text {
+  text-align: center;
+}
+.events .container .events-content .event .text h1 {
+  font-weight: bold;
+  color: var(--main-color);
+}
+.events .container .events-content .event .text p {
+  color: #000000a4;
+}
+
+/* end events */
