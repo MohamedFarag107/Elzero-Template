@@ -980,15 +980,15 @@ nav .container .mega-menu .links li a {
 .events .container .events-content .event .time .day:hover .name {
   border-color: #037ef3;
 }
-.events .container .events-content .event .time .hour:hover .name ,
+.events .container .events-content .event .time .hour:hover .name,
 .events .container .events-content .event .time .hour:hover {
   border-color: #f85a40;
 }
-.events .container .events-content .event .time .minute:hover .name ,
+.events .container .events-content .event .time .minute:hover .name,
 .events .container .events-content .event .time .minute:hover {
   border-color: #00c16e;
 }
-.events .container .events-content .event .time .second:hover .name ,
+.events .container .events-content .event .time .second:hover .name,
 .events .container .events-content .event .time .second:hover {
   border-color: #7552cc;
 }
@@ -1017,5 +1017,154 @@ nav .container .mega-menu .links li a {
 .events .container .events-content .event .text p {
   color: #000000a4;
 }
-
 /* end events */
+/* start discount */
+.discount {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  min-height: 100vh;
+}
+@media (max-width: 991px) {
+  .discount {
+    grid-template-columns: 1fr;
+  }
+}
+.discount .have-discount {
+  background-image: url("../asset/images/discount-background1.jpg");
+  background-size: cover;
+  color: white;
+  position: relative;
+  z-index: 1;
+  animation: 5s ease-in-out 0s infinite normal none running change-background;
+  -webkit-animation: 5s ease-in-out 0s infinite normal none running
+    change-background;
+}
+@keyframes change-background {
+  100% {
+    background-image: url("../asset/images/discount-background2.jpg");
+  }
+}
+.discount .have-discount .blue-bg {
+  min-height: 100vh;
+  background-color: rgb(23 135 224 / 97%);
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  text-align: center;
+}
+.discount .have-discount .blue-bg img {
+  width: 300px;
+  max-width: 100%;
+}
+.discount .have-discount .blue-bg h1,
+.discount .request-discount h1 {
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: -2px;
+}
+.discount .have-discount .blue-bg p {
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+.discount .request-discount {
+  width: fit-content;
+}
+.discount .request-discount,
+.discount .request-discount form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.discount .request-discount form {
+  width: 100%;
+}
+input:focus, textarea:focus, select:focus{
+  outline: none;
+}
+.discount .request-discount form input,.discount .request-discount form textarea {
+  width: 100%;
+  display: block;
+  margin-bottom: 25px;
+  padding: 15px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: #f9f9f9;
+  caret-color: var(--main-color);
+}
+.discount .request-discount form textarea {
+  resize: none;
+
+}
+.discount .request-discount form [type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: var(--main-color);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+
+/* end discount */
+/* start footer */
+footer {
+  background-color: #191919;
+  padding: 50px 0px;
+}
+footer .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+footer .container ul {
+  display: flex;
+    gap: 25px;
+}
+footer .container ul li {
+  background-color: #313131;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+footer .container ul li svg {
+  color: #b9b9b9;
+}
+footer .container ul li:hover svg {
+  color: white;
+}
+footer .container ul li:nth-child(3):hover {
+  background-color: #ff0000;
+}
+footer .container ul li:nth-child(2):hover {
+  background-color: #1da1f2;
+}
+footer .container ul li:nth-child(1):hover {
+  background-color: #1877f2;
+}
+footer .container .made-with-love {
+  color: white;
+  font-size: 30px;
+}
+footer .container .made-with-love span {
+  color: #ff0000;
+}
+/* end footer */
