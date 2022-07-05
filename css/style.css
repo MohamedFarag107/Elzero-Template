@@ -571,10 +571,10 @@ nav .container .mega-menu .links li a {
   width: calc(100% - 40px);
   height: 4px;
 }
-.features .container .feature-content .quality h2{
+.features .container .feature-content .quality h2 {
   color: #f44036;
 }
-.features .container .feature-content .quality h2::before{
+.features .container .feature-content .quality h2::before {
   background: #f44036;
 }
 .features .container .feature-content .time h2 {
@@ -611,15 +611,15 @@ nav .container .mega-menu .links li a {
   -ms-transition: var(--main-transition);
   -o-transition: var(--main-transition);
 }
-.features .container .feature-content .quality a{
+.features .container .feature-content .quality a {
   border-color: #f44036;
   color: #f44036;
 }
-.features .container .feature-content .time a{
+.features .container .feature-content .time a {
   border-color: #009688;
   color: #009688;
 }
-.features .container .feature-content .passion a{
+.features .container .feature-content .passion a {
   border-color: #03a9f4;
   color: #03a9f4;
 }
@@ -631,7 +631,7 @@ nav .container .mega-menu .links li a {
 }
 .testimonials .container .testimonials-content {
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 40px;
 }
 .testimonials .container .testimonials-content .box {
@@ -677,7 +677,7 @@ nav .container .mega-menu .links li a {
 }
 .team .container .team-cards .card {
   display: grid;
-  grid-template-columns: repeat(6,1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 10px;
   background-color: var(--section-background);
   overflow: hidden;
@@ -687,11 +687,12 @@ nav .container .mega-menu .links li a {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
-.team .container .team-cards .card img{
+.team .container .team-cards .card img {
   width: 100%;
   grid-column: span 3;
 }
-.team .container .team-cards .card .text{
+
+.team .container .team-cards .card .text {
   grid-column: span 3;
   display: flex;
   flex-direction: column;
@@ -702,16 +703,84 @@ nav .container .mega-menu .links li a {
   justify-content: space-evenly;
   font-size: 25px;
 }
-.team .container .team-cards .card .icons svg:nth-child(1){
+.team .container .team-cards .card .icons svg:nth-child(1) {
   color: #1877f2;
 }
-.team .container .team-cards .card .icons svg:nth-child(2){
+.team .container .team-cards .card .icons svg:nth-child(2) {
   color: #1da1f2;
 }
-.team .container .team-cards .card .icons svg:nth-child(3){
+.team .container .team-cards .card .icons svg:nth-child(3) {
   color: #0077b5;
 }
-.team .container .team-cards .card .icons svg:nth-child(4){
+.team .container .team-cards .card .icons svg:nth-child(4) {
   color: #ff0000;
 }
 /* end team */
+/* start services */
+.services {
+  background-color: var(--section-background);
+  padding: var(--main-padding-top) 0px;
+}
+.services .container .services-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+.services .container .services-content .box {
+  background-color: white;
+  box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px 0 rgb(0 0 0 / 12%);
+  counter-increment: services;
+  transition: var(--main-transition);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.services .container .services-content .box svg {
+  color: var(--section-background);
+  padding-top: 20px;
+}
+.services .container .services-content .box h3 {
+  font-size: 24px;
+  color: var(--main-color);
+  font-weight: bold;
+}
+.services .container .services-content .box .info {
+  width: 100%;
+  background-color: #f9f9f9;
+  position: relative;
+}
+.services .container .services-content .box .info::before {
+    content: "0" counter(services);
+    position: absolute;
+    background-color: var(--main-color);
+    color: white;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 80px;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+}
+.services .container .services-content .box .info::after {
+  content: '';
+  background-color: #d5d5d5;
+  position: absolute;
+  left: 80px;
+  top: 0;
+  height: 100%;
+  width: 50px;
+  transform: skewX(340deg);
+}
+.services .container .services-content .box .info a {
+  color: var(--main-color);
+  display: block;
+  padding: 15px;
+  float: right;
+}
+/* end services */
